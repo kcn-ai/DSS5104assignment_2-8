@@ -20,6 +20,31 @@
 
 ---
 
+## 🗄️ Datasets
+
+This project evaluates the models on two standard Natural Language Processing (NLP) benchmarks. **Note that raw datasets are not included in this repository due to size limits.**
+
+Please manually download the datasets and place them in the `data/` directory before running any notebooks.
+
+### 1. Download the Data
+* **[AG News](https://huggingface.co/datasets/ag_news)**: 4-class topic classification benchmark.
+  * Download the raw CSV files (e.g., `train.csv` and `test.csv`).
+* **[IMDB Reviews](https://ai.stanford.edu/~amaas/data/sentiment/)**: Binary sentiment classification benchmark.
+  * Download the dataset (please provide the CSV format if applicable, or the original archive).
+
+*(Note: If the datasets were provided via a specific NUS course portal like Canvas/LumiNUS, you can mention: "Please download the datasets from the DSS5104 Canvas portal.")*
+
+### 2. Data Directory Setup
+Create a folder named `data/` at the root of the repository and place the downloaded files inside. Your directory structure should look exactly like this before running Phase 1:
+
+```text
+├── data/
+│   ├── agnews_train.csv    <-- AG News training data
+│   ├── agnews_test.csv     <-- AG News testing data
+│   ├── imdb_train.csv      <-- IMDB training data
+│   └── imdb_test.csv       <-- IMDB testing data
+```
+
 ##  Quickstart
 
 ### 1. Clone the Repository
@@ -48,17 +73,22 @@ pip install -r requirements.txt
 
 -----
 
-##  Project Workflow
+## ⚙️ Project Workflow
 
-To reproduce our data pipeline and model training, please execute the Jupyter Notebooks in the following sequential order for each respective dataset:
+Our pipeline is structured into two main phases: **Data Preprocessing** and **Model Training**. Please execute the Jupyter Notebooks in the following sequential order:
 
-**📰 AG News Pipeline:**
-`clean_agnews.ipynb` ➔ `Tier1_agnews.ipynb` ➔ `agnews_fasttext.ipynb` ➔ `Tier3.ipynb`
+### Phase 1: Data Preprocessing & Cleaning 🧹
+Raw datasets are initially processed to handle noise, standardize text, and prepare the splits for model ingestion. 
+* 📰 **AG News:** Run `clean_agnews.ipynb`
+* 🎬 **IMDB:** Run `clean_imdb.ipynb`
 
-**🎬 IMDB Pipeline:**
-`clean_imdb.ipynb` ➔ `Tier1_imdb.ipynb` ➔ `imdb_fasttext.ipynb` ➔ `Tier3.ipynb`
+### Phase 2: Model Training & Evaluation 🧠
+Once the clean datasets are generated, run the training notebooks sequentially. Our models are structured progressively from traditional machine learning baselines (Tier 1) to deep learning architectures (Tier 3).
 
-> ⚠️ **Hardware Note**: Tier 3 notebooks (Transformer models) require a GPU for reasonable training times. All our deep learning experiments were executed on **Google Colab (NVIDIA T4 GPU)**. Tier 1 and Tier 2 models can be comfortably executed on a standard CPU.
+* **AG News Pipeline:** `Tier1_agnews.ipynb` ➔ `agnews_fasttext.ipynb` ➔ `Tier3.ipynb`
+* **IMDB Pipeline:** `Tier1_imdb.ipynb` ➔ `imdb_fasttext.ipynb` ➔ `Tier3.ipynb`
+
+> ⚠️ **Hardware Note**: Tier 3 notebooks (Transformer models) require a GPU for reasonable training times. All our deep learning experiments were executed on **Google Colab (NVIDIA T4 GPU)**. Phase 1, Tier 1, and Tier 2 notebooks can be comfortably executed on a standard CPU.
 
 -----
 
