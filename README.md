@@ -35,14 +35,13 @@ Please manually download the datasets and place them in the `data/` directory be
 *(Note: If the datasets were provided via a specific NUS course portal like Canvas/LumiNUS, you can mention: "Please download the datasets from the DSS5104 Canvas portal.")*
 
 ### 2. Data Directory Setup
-Create a folder named `data/` at the root of the repository and place the downloaded files inside. Your directory structure should look exactly like this before running Phase 1:
+For convenience and exact reproducibility, we have pre-packaged the specific data splits used in our experiments. Please download them from our shared drive before running the notebooks.
 
 ```text
 ├── data/
-│   ├── agnews_train.csv    <-- AG News training data
-│   ├── agnews_test.csv     <-- AG News testing data
-│   ├── imdb_train.csv      <-- IMDB training data
-│   └── imdb_test.csv       <-- IMDB testing data
+│   ├── agnews_train.csv    <-- Downloaded from Drive
+│   ├── agnews_test.csv     <-- Downloaded from Drive
+│   ├── IMDB_dataset.csv      <-- Downloaded from Drive
 ```
 
 ##  Quickstart
