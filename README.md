@@ -27,7 +27,7 @@ This project evaluates the models on two standard Natural Language Processing (N
 Please manually download the datasets and place them in the `data/` directory before running any notebooks.
 
 ### 1. Download the Data
-* **[AG News](https://huggingface.co/datasets/ag_news)**: 4-class topic classification benchmark.
+* **[AG News](https://huggingface.co/datasets/fancyzhx/ag_news)**: 4-class topic classification benchmark.
   * Download the raw CSV files (e.g., `train.csv` and `test.csv`).
 * **[IMDB Reviews](https://ai.stanford.edu/~amaas/data/sentiment/)**: Binary sentiment classification benchmark.
   * Download the dataset (please provide the CSV format if applicable, or the original archive).
