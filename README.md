@@ -86,6 +86,9 @@ Once the clean datasets are generated, run the training notebooks sequentially. 
 
 > ⚠️ **Hardware Note**: Tier 3 notebooks (Transformer models) require a GPU for reasonable training times. All our deep learning experiments were executed on **Google Colab (NVIDIA T4 GPU)**. Phase 1, Tier 1, and Tier 2 notebooks can be comfortably executed on a standard CPU.
 
+### Phase 3: Results Aggregation & Visualization 
+After all experiments are completed, the evaluation metrics are compiled into `data/DSS5104_Results.xlsx`.
+* **Visualization:** Run `code/Total_analysis.ipynb` to parse the results log and generate the core figures (learning curves, data efficiency charts，error analysis) used in our final report. Output images are saved to the `results/` directory.
 -----
 
 ##  Reproducing Results
