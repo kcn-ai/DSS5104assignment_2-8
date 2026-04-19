@@ -69,7 +69,7 @@ pip install -r requirements.txt
 
 -----
 
-## ⚙️ Project Workflow
+##  Project Workflow
 
 Our pipeline is structured into two main phases: **Data Preprocessing** and **Model Training**. Please execute the Jupyter Notebooks in the following sequential order:
 
