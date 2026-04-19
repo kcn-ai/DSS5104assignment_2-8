@@ -35,7 +35,7 @@ Please manually download the datasets and place them in the `data/` directory be
 *(Note: If the datasets were provided via a specific NUS course portal like Canvas/LumiNUS, you can mention: "Please download the datasets from the DSS5104 Canvas portal.")*
 
 ### 2. Data Directory Setup
-For convenience and exact reproducibility, we have pre-packaged the specific data splits used in our experiments. Please download them from our shared drive before running the notebooks.
+For convenience and exact reproducibility, we have pre-packaged the specific data splits used in our experiments. Please download them from our shared drive before running the notebooks.🔗 **[Download Datasets via Google Drive](https://drive.google.com/drive/folders/1pT62iwZx04x8XRso1KsL7fY_PKxXCb5k?usp=sharing)**
 
 ```text
 ├── data/
