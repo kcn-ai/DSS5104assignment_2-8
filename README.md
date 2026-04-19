@@ -46,8 +46,8 @@ For convenience and exact reproducibility, we have pre-packaged the specific dat
 ### 1. Clone the Repository
 
 ```bash
-git clone [https://github.com/](https://github.com/)[your-username]/[your-repo-name].git
-cd [your-repo-name]
+git clone https://github.com/kcn-ai/DSS5104assignment_2-8.git
+cd DSS5104assignment_2-8
 ````
 
 ### 2\. Environment Setup
