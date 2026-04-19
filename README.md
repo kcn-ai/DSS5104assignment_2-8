@@ -12,6 +12,7 @@
 ---
 
 ##  Table of Contents
+- [Datasets](#-datasets)
 - [Quickstart](#-quickstart)
 - [Project Workflow](#-project-workflow)
 - [Reproducibility](#-reproducing-results)
@@ -20,7 +21,7 @@
 
 ---
 
-## 🗄️ Datasets
+##  Datasets
 
 This project evaluates the models on two standard Natural Language Processing (NLP) benchmarks. **Note that raw datasets are not included in this repository due to size limits.**
 
@@ -28,11 +29,7 @@ Please manually download the datasets and place them in the `data/` directory be
 
 ### 1. Download the Data
 * **[AG News](https://huggingface.co/datasets/fancyzhx/ag_news)**: 4-class topic classification benchmark.
-  * Download the raw CSV files (e.g., `train.csv` and `test.csv`).
 * **[IMDB Reviews](https://ai.stanford.edu/~amaas/data/sentiment/)**: Binary sentiment classification benchmark.
-  * Download the dataset (please provide the CSV format if applicable, or the original archive).
-
-*(Note: If the datasets were provided via a specific NUS course portal like Canvas/LumiNUS, you can mention: "Please download the datasets from the DSS5104 Canvas portal.")*
 
 ### 2. Data Directory Setup
 For convenience and exact reproducibility, we have pre-packaged the specific data splits used in our experiments. Please download them from our shared drive before running the notebooks.🔗 **[Download Datasets via Google Drive](https://drive.google.com/drive/folders/1pT62iwZx04x8XRso1KsL7fY_PKxXCb5k?usp=sharing)**
@@ -61,7 +58,7 @@ We provide two methods for dependency management. **Conda is highly recommended*
 
 ```bash
 conda env create -f environment.yml
-conda activate dss5104
+conda activate dss5104-group2-8
 ```
 
 **Option B: pip**
