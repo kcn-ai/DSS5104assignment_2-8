@@ -73,12 +73,12 @@ pip install -r requirements.txt
 
 Our pipeline is structured into two main phases: **Data Preprocessing** and **Model Training**. Please execute the Jupyter Notebooks in the following sequential order:
 
-### Phase 1: Data Preprocessing & Cleaning 🧹
+### Phase 1: Data Preprocessing & Cleaning 
 Raw datasets are initially processed to handle noise, standardize text, and prepare the splits for model ingestion. 
 * 📰 **AG News:** Run `clean_agnews.ipynb`
 * 🎬 **IMDB:** Run `clean_imdb.ipynb`
 
-### Phase 2: Model Training & Evaluation 🧠
+### Phase 2: Model Training & Evaluation 
 Once the clean datasets are generated, run the training notebooks sequentially. Our models are structured progressively from traditional machine learning baselines (Tier 1) to deep learning architectures (Tier 3).
 
 * **AG News Pipeline:** `Tier1_agnews.ipynb` ➔ `agnews_fasttext.ipynb` ➔ `Tier3.ipynb`
